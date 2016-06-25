@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
 	<link rel="stylesheet" href="css/swipebox.css">
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
 
 	<!-- JS -->
 	<script src="libs/angular/angular.min.js"></script>
@@ -22,6 +23,12 @@
 	<script type="text/javascript" src="js/modules//move-top.js"></script>
 	<script type="text/javascript" src="js/modules/easing.js"></script>
 	<script type="text/javascript" src="libs/angular-sanitize/angular-sanitize.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+	<!-- Angular Material Library -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
 
 	<!-- ANGULAR CUSTOM -->
 	<script src="js/controllers/MainCtrl.js"></script>
@@ -82,12 +89,14 @@
 					</div>
 					<div class="clearfix"></div>
 					<div class="contact-form">
-						<form action="#" method="post">
+						<form >
 							<input type="text" name="Name" placeholder="Name" required="">
 							<input class="email" name="Email" type="text" placeholder="Email" required="">
 							<input class="phone" name="phone" type="text" placeholder="Phone" required="">
 							<textarea name="Message" placeholder="Message" required=""></textarea>
-							<input type="submit" value="SUBMIT" >
+							<md-button class="md-primary md-raised center-block" ng-click="ComingSoon($event)"   >
+								Submit
+							</md-button>
 						</form>
 					</div>
 				</div>

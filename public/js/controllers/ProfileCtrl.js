@@ -6,12 +6,13 @@ angular.module('ProfileCtrl', ['ngSanitize']).controller('ProfileController', fu
 	$scope.phone = '+91 8880191315';
 	$scope.address = {street: 'Koramangala, Bangalore - 560047', state: 'KA, India.'};
 	$scope.mail = 'chaudharisagard@gmail.com';
-	$scope.blog = {url: 'https://sagarchaudhari.blogspot.in', title: 'Sagar blogspot'};
+	$scope.blog = {url: 'https://sagarchaudhari.in/blogs', title: 'Blogs [Coming soon]'};
 	$scope.social = {
 		linkedin: 'https://www.linkedin.com/in/mahasagar',
 		twitter: 'https://twitter.com/The_MahaSagar',
 		skype: 'skype:the_mahasagar',
-		github: 'https://github.com/mahasagar/'
+		github: 'https://github.com/mahasagar/',
+		insta:'https://www.instagram.com/the_mahasagar/'
 	};
 
 	$scope.aboutus = '<p>I am an software engineer.' +
@@ -21,12 +22,13 @@ angular.module('ProfileCtrl', ['ngSanitize']).controller('ProfileController', fu
 		'<br>' +
 		'<p>I\'ve been associated and involved with computers through out my life.' +
 		' Among other stuff, I like to play sports,' +
-		' surf blogs and articles. And of course #Instagram..! </p>';
+		' surf blogs and articles. And of course '+
+		'<a href="https://www.instagram.com/the_mahasagar/"><i >#Instagram</i></a> </p>';
 	$scope.awards = [
 		'Best Sportsman,SPI, 2009',
-		'Best All-rounder,SPI, 2009',
-		'First in Project presentation, 2012'
+		'Best All-rounder,SPI, 2009'
 	];
+
 
 	$scope.workInfo = [{
 		year: 'August 2015 - Present ',
