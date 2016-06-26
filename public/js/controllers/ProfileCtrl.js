@@ -34,7 +34,11 @@ angular.module('ProfileCtrl', ['ngSanitize']).controller('ProfileController', fu
 		year: 'August 2015 - Present ',
 		company: ' Medibox Technologies LLP, Bangalore',
 		role: ' Software Developer',
-		description: '<p>Designed & Developed scalable App application to build digital platform for healthcare industry. Roles also included configuring cloud infrastructure to make application reliable & scalable, to facilitate Demilitarized zone, and proactively enforce security measures.</p><p>Technologies used: Mongo DB, Node.JS, AngularJS, ElasticSearch, Nginx, ELK stack.'
+		description: '<p>Designed & Developed scalable App application to build digital platform ' +
+		'for healthcare industry.' +
+		' Designed, Developed And Test Android App for Pharmacies to Order Medicine from Suppliers.,' +
+		' to facilitate Demilitarized zone, and proactively enforce security measures.</p>' +
+		'<p>Technologies used: Android, Ionic Framework, Mongo DB, Node.JS, AngularJS, ElasticSearch, Nginx, ELK stack.'
 	}, {
 		year: 'Jan 2015 - July 2015 ',
 		company: ' Nextect Services, Bangalore',
