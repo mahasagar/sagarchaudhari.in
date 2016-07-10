@@ -8,8 +8,7 @@ var morgan				 = require('morgan');
 var fs 						 = require('fs');
 var path 					 = require('path');
 
-// configuration ===========================================
-	
+// configuration ==========================================
 // config files
 var db = require('./config/db');
 

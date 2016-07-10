@@ -1,4 +1,4 @@
-angular.module('MainCtrl', []).controller('MainController', function($scope,$mdDialog) {
+angular.module('MainCtrl', []).controller('MainController', function($scope,$mdDialog,$rootScope) {
 
 
 	$scope.social = {
@@ -10,7 +10,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$mdD
 	$scope.phone = '+91 8880191315';
 	$scope.address = {street: 'Koramangala, Bangalore - 560047', state: 'KA, India.'};
 	$scope.mail = 'chaudharisagard@gmail.com';
-
+    $rootScope.showContact=true;
 	$scope.ComingSoon = function(ev) {
 		// Appending dialog to document.body to cover sidenav in docs app
 		// Modal dialogs should fully cover application

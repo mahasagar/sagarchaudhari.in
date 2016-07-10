@@ -34,6 +34,10 @@
 	<script src="js/controllers/MainCtrl.js"></script>
 	<script src="js/controllers/ProfileCtrl.js"></script>
 	<script src="js/services/ProfileService.js"></script>
+
+
+	<script src="js/Travel/js/TravelCtrl.js"></script>
+
 	<script src="js/appRoutes.js"></script>
 	<script src="js/app.js"></script>
 	
@@ -55,7 +59,7 @@
 </head>
 <body ng-app="sampleApp" ng-controller="MainController">
 	<!-- header -->
-	<div class="header">
+	<div class="header show-on-scroll">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-header pull-left">
 				<a class="navbar-brand" href="/home">Home</a>
@@ -63,15 +67,20 @@
 			<div class="navbar-header pull-left">
 				<a class="navbar-brand" href="/">Profile</a>
 			</div>
+			<div class="navbar-header pull-left">
+				<a class="navbar-brand" href="/travel">Travel</a>
+			</div>
 			<div class="navbar-header pull-right">
 				<a class="navbar-brand" href="#contact">Contact</a>
 			</div>
 		</nav>
 	</div>
 	<!-- //header -->
-	<div ng-view class="view"></div>
+	<div ng-view class="view">
+
+	</div>
 	<!--contact -->
-	<div class="welcome contact" id="contact">
+	<div class="welcome contact" id="contact" ng-if="showContact">
 		<div class="container">
 			<h3 class="title">Contact Us</h3>
 

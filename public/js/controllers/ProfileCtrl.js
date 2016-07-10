@@ -1,5 +1,6 @@
-angular.module('ProfileCtrl', ['ngSanitize']).controller('ProfileController', function($scope) {
+angular.module('ProfileCtrl', ['ngSanitize']).controller('ProfileController', function($scope,$rootScope) {
 
+	$rootScope.showContact=true;
 	$scope.name = 'Sagar Chaudhari';
 	$scope.title = 'Software Developer';
 	$scope.dob = '09-08-1990';
