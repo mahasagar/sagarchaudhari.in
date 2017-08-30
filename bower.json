@@ -6,6 +6,7 @@
     "angular-route": "latest",
     "bootstrap": "latest",
     "font-awesome": "~4.6.3",
-    "angular-sanitize":"latest"
+    "angular-sanitize": "latest",
+    "angular-animate": "^1.6.6"
   }
 }
